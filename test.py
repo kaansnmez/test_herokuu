@@ -1,6 +1,6 @@
 import os
 def main():
-  private_key=os.environ['private_key']
-  print(private_key)
+  for key,value in os.environ.items():
+    print('{} : {}'.format(key,value))
 if __name__=='__main__':
     main()
